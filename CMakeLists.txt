@@ -19,7 +19,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")
 #target_include_directories(${PROJECT_NAME} )
 
 # Include N-API wrappers
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_JS_INC} PRIVATE "${CMAKE_SOURCE_DIR}/node_modules/node-addon-api")
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_JS_INC} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/node_modules/node-addon-api")
 
 # Essential library files to link to a node addon
 # You should add this line in every CMake.js based project
